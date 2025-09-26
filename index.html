@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Painting</title>
+  <style>
+
+    body{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container{
+      width: 748px;
+      height: 748px;
+      background-color: #F0F1EC;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 1fr;
+      grid-template-rows: 414px 130px 155px 1fr;
+    }
+    .red{
+      height: 414px;
+      width: 320px;
+      background-color: #E72F24;
+      grid-column: 1 / 1;
+      grid-row: 1/1;
+      border-right: 9px solid black;
+      border-bottom: 9px solid black;
+    }
+    .blue{
+      height: 130px;
+      width: 50px;
+      background-color: #004592;
+      grid-column: -1;
+      grid-row: 2/2;
+      border-left: 9px solid black;
+      border-bottom: 10px solid black;
+      border-top: 9px solid black;
+
+
+    }
+    .yellow{
+      height: 20px;
+      width: 198px;
+      background-color: #F9D01E;
+      grid-column: 2/2;
+      grid-row: -1;
+      border-left: 9px solid black;
+      border-right: 9px solid black;
+      border-top: 9px solid black;
+    }
+    .black{
+      height: 20px;
+      width: 163px;
+      background-color: #232629;
+      grid-column-end: -2;
+      grid-row: -1;
+      border-left: 9px solid black;
+      border-right: 9px solid black;
+      border-top: 9px solid black;
+    }
+    .transparent{
+      width: 428px;
+      height: 414px;
+      border-bottom: 9px solid black;
+    }
+    .transparent2{
+      width: 320px;
+      height: 305px;
+      grid-column: 1;
+      grid-row: 2;
+      border-right: 9px solid black;
+    }
+    .transparent3{
+      width: 320px;
+      height: 20px;
+      grid-column: 1;
+      grid-row: -1;
+      border-top: 9px solid black;
+    }
+    .transparent4{
+      height: 175px;
+      width: 50px;
+      grid-column: 5;
+      grid-row: 3;
+      border-left: 9px solid black;
+    }
+
+
+  </style>
+</head>
+<body>
+  
+<div class="container">
+  <div class="red"></div>
+  <div class="transparent"></div>
+  <div class="blue"></div>
+  <div class="transparent2"></div>
+  <div class="transparent3"></div>
+  <div class="yellow"></div>
+  <div class="black"></div>
+ <div class="transparent4"></div>
+</div>
+
+
+</body>
+</html>
